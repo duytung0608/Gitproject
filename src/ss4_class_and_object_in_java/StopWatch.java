@@ -20,18 +20,18 @@ public class StopWatch {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
         double[] array;
-        array = new double[100000];
+        array = new double[10000];
         for (int i=0;i<array.length;i++) {
             array[i] = (Math.random() * ((100005-5) +1)) + 5 ;
         }
         for (int j=0;j<array.length-1;j++) {
-            int min_idx = j;
             for (int k=j+1;k<array.length;k++) {
-                if (array[k] < array[min_idx] ) {
-                    min_idx = k;
+                int min_idex = j;
+                if (array[k] < array[min_idex] ) {
+                    min_idex = k;
                 }
-                double temp = array[min_idx];
-                array[min_idx] = array[j];
+                double temp = array[min_idex];
+                array[min_idex] = array[j];
                 array[j] = temp;
             }
         }
@@ -40,7 +40,7 @@ public class StopWatch {
             System.out.print(array[m] + "\t");
         }
         stopWatch.endTime();
-        System.out.println(stopWatch.getElapsedTime());
+        System.out.println("\n" + stopWatch.getElapsedTime());
     }
 }
 // chạy không thành công
