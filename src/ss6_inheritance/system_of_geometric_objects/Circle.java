@@ -1,4 +1,4 @@
-package inheritance;
+package ss6_inheritance.system_of_geometric_objects;
 
 public class Circle extends Shape {
     double radius;

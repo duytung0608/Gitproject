@@ -1,4 +1,6 @@
-package inheritance;
+package ss6_inheritance.system_of_geometric_objects;
+
+import ss6_inheritance.system_of_geometric_objects.Circle;
 
 public class CircleTest {
     public static void main(String[] args) {

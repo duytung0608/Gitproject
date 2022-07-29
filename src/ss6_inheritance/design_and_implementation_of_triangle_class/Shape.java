@@ -1,4 +1,4 @@
-package inheritance;
+package ss6_inheritance.design_and_implementation_of_triangle_class;
 
 public class Shape {
     String color;
