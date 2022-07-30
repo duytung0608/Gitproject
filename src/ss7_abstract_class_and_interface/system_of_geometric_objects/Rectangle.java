@@ -1,6 +1,8 @@
-package ss6_inheritance.system_of_geometric_objects;
+package ss7_abstract_class_and_interface.system_of_geometric_objects;
 
-public class Rectangle extends Shape {
+import ss7_abstract_class_and_interface.resizable_implementation_interface_for_class_students.Resizeable;
+
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -44,9 +46,15 @@ public class Rectangle extends Shape {
     public String toString() {
         return "A Retangle with width="
                 + getWidth()
-                + "and length="
+                + " and length="
                 + getLength()
+                + " and Area= "
+                + getArea()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+    public void resize(double percent) {
+        this.width += this.width*(percent/100);
+        this.length += this.length*(percent/100);
     }
 }

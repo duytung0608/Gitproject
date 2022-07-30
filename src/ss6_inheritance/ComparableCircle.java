@@ -1,6 +1,6 @@
-package ss7_abstract_class_and_interface;
+package ss6_inheritance;
 
-import ss6_inheritance.system_of_geometric_objects.Circle;
+import ss7_abstract_class_and_interface.system_of_geometric_objects.Circle;
 
 public class ComparableCircle extends Circle
         implements Comparable<ComparableCircle>  { //Comparable sắp xếp nhưng sắp xếp như thế nào hay theo 1 cái phương thức như nào thì ta truyền vào cho nó <ComparableCircle> tức là sắp xếp theo ComparableCircle

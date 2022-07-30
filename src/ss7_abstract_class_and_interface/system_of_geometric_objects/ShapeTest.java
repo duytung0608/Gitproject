@@ -1,6 +1,4 @@
-package ss6_inheritance.system_of_geometric_objects;
-
-import ss6_inheritance.system_of_geometric_objects.Shape;
+package ss7_abstract_class_and_interface.system_of_geometric_objects;
 
 public class ShapeTest {
     public static void main(String[] args) {

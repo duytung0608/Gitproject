@@ -1,4 +1,6 @@
-package ss7_abstract_class_and_interface;
+package ss6_inheritance;
+
+import ss6_inheritance.ComparableCircle;
 
 import java.util.Arrays;
 

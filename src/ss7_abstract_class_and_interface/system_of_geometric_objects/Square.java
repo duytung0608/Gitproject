@@ -1,6 +1,8 @@
-package ss6_inheritance.system_of_geometric_objects;
+package ss7_abstract_class_and_interface.system_of_geometric_objects;
 
-public class Square extends Rectangle{
+import ss7_abstract_class_and_interface.resizable_implementation_interface_for_class_students.Resizeable;
+
+public class Square extends Rectangle implements Resizeable {
     public Square() {
     }
 
@@ -29,9 +31,15 @@ public class Square extends Rectangle{
         setSide(length);
     }
 
+    public double getArea() {
+        return getSide()*getSide();
+    }
+
     public String toString() {
         return "A Square with side="
                 + getSide()
+                + " and Area= "
+                + getArea()
                 + ", which is a subclass of "
                 + super.toString();
     }

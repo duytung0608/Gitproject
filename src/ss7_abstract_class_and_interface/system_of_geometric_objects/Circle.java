@@ -1,6 +1,8 @@
-package ss6_inheritance.system_of_geometric_objects;
+package ss7_abstract_class_and_interface.system_of_geometric_objects;
 
-public class Circle extends Shape {
+import ss7_abstract_class_and_interface.resizable_implementation_interface_for_class_students.Resizeable;
+
+public class Circle extends Shape implements Resizeable {
     double radius;
 
     public Circle() {
@@ -34,7 +36,12 @@ public class Circle extends Shape {
     public String toString() {
         return "A Circle with radius="
                 + getRadius()
+                + " and Area = "
+                + getArea()
                 + ",Which is a subclass of "
                 + super.toString();
+    }
+    public void resize(double perccent) {
+        this.radius += this.radius * (perccent/100);
     }
 }

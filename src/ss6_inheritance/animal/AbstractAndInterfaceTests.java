@@ -1,11 +1,8 @@
-package ss7_abstract_class_and_interface.animal;
+package ss6_inheritance.animal;
 
-import ss7_abstract_class_and_interface.animal.Animal;
-import ss7_abstract_class_and_interface.animal.Chicken;
-import ss7_abstract_class_and_interface.animal.Tiger;
-import ss7_abstract_class_and_interface.fruit.Apple;
-import ss7_abstract_class_and_interface.fruit.Fruit;
-import ss7_abstract_class_and_interface.fruit.Orange;
+import ss6_inheritance.fruit.Apple;
+import ss6_inheritance.fruit.Fruit;
+import ss6_inheritance.fruit.Orange;
 
 public class AbstractAndInterfaceTests {
     public static void main(String[] args) {

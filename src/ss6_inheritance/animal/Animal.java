@@ -1,4 +1,4 @@
-package ss7_abstract_class_and_interface.animal;
+package ss6_inheritance.animal;
 
 public abstract class Animal {
     public abstract String makeSound();

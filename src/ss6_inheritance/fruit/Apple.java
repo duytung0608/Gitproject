@@ -1,4 +1,4 @@
-package ss7_abstract_class_and_interface.fruit;
+package ss6_inheritance.fruit;
 
 public class Apple extends Fruit{
     public String howToEat() {
