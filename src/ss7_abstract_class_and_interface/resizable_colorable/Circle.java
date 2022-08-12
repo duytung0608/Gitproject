@@ -1,6 +1,7 @@
-package ss7_abstract_class_and_interface.system_of_geometric_objects;
+package ss7_abstract_class_and_interface.resizable_colorable;
 
-import ss7_abstract_class_and_interface.resizable_implementation_interface_for_class_students.Resizeable;
+import ss7_abstract_class_and_interface.resizable_colorable.Resizeable;
+import ss7_abstract_class_and_interface.resizable_colorable.Shape;
 
 public class Circle extends Shape implements Resizeable {
     double radius;

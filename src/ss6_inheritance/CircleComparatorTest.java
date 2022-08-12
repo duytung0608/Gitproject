@@ -1,7 +1,6 @@
 package ss6_inheritance;
 
-import ss6_inheritance.CircleComparator;
-import ss7_abstract_class_and_interface.system_of_geometric_objects.Circle;
+import ss7_abstract_class_and_interface.resizable_colorable.Circle;
 
 import java.util.Arrays;
 import java.util.Comparator;

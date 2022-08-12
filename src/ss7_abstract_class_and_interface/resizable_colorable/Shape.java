@@ -1,4 +1,4 @@
-package ss7_abstract_class_and_interface.system_of_geometric_objects;
+package ss7_abstract_class_and_interface.resizable_colorable;
 
 public class Shape {
     String color;

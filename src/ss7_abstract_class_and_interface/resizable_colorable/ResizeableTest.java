@@ -1,8 +1,4 @@
-package ss7_abstract_class_and_interface.resizable_implementation_interface_for_class_students;
-
-import ss7_abstract_class_and_interface.system_of_geometric_objects.Circle;
-import ss7_abstract_class_and_interface.system_of_geometric_objects.Rectangle;
-import ss7_abstract_class_and_interface.system_of_geometric_objects.Square;
+package ss7_abstract_class_and_interface.resizable_colorable;
 
 // ba lớp circle ... nằm ở package system_of_geometric_object
 

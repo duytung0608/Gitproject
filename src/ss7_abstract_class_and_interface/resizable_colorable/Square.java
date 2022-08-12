@@ -1,8 +1,10 @@
-package ss7_abstract_class_and_interface.system_of_geometric_objects;
+package ss7_abstract_class_and_interface.resizable_colorable;
 
-import ss7_abstract_class_and_interface.resizable_implementation_interface_for_class_students.Resizeable;
+import ss7_abstract_class_and_interface.resizable_colorable.Colorable;
+import ss7_abstract_class_and_interface.resizable_colorable.Rectangle;
+import ss7_abstract_class_and_interface.resizable_colorable.Resizeable;
 
-public class Square extends Rectangle implements Resizeable {
+public class Square extends Rectangle implements Resizeable, Colorable {
     public Square() {
     }
 
@@ -42,5 +44,9 @@ public class Square extends Rectangle implements Resizeable {
                 + getArea()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    public String howToColor() {
+        return "Color all four sides.";
     }
 }
