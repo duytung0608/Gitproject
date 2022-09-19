@@ -21,7 +21,7 @@ public class ReverseTheElementsInTheArray {
             array[i] = Integer.parseInt(scanner.nextLine());
             i++;
         }
-        System.out.printf("%-20s%s", "Element in array: ", "");
+        System.out.printf("%-20s%s", "Element in array: ", ""); // cái -20s%s là cái gì zậy?
         for (int j=0;j<array.length;j++) {
             System.out.print(array[j] + "\t");
         }
