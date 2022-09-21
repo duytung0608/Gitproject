@@ -1,4 +1,4 @@
-package ss6_inheritance;
+package ss7_abstract_class_and_interface.practice07.circle_comparable_and_comparator;
 
 import ss7_abstract_class_and_interface.exercise07.resizeable_and_colorable.Circle;
 

@@ -1,4 +1,4 @@
-package ss6_inheritance;
+package ss7_abstract_class_and_interface.practice07.circle_comparable_and_comparator;
 
 import ss7_abstract_class_and_interface.exercise07.resizeable_and_colorable.Circle;
 
@@ -10,9 +10,9 @@ public class CircleComparatorTest {
         Circle[] circles = new Circle[3];
         circles[0] = new Circle(3.6);
         circles[1] = new Circle();
-        circles[2] = new Circle("indigo",false, 3.5);
+        circles[2] = new Circle("indigo", false, 3.5);
 
-        System.out.println("Pre-sorted: ");
+        System.out.println("Pre-sorted:");
         for (Circle circle : circles) {
             System.out.println(circle);
         }
@@ -20,7 +20,7 @@ public class CircleComparatorTest {
         Comparator circleComparator = new CircleComparator();
         Arrays.sort(circles, circleComparator);
 
-        System.out.println("After-sorted: ");
+        System.out.println("After-sorted:");
         for (Circle circle : circles) {
             System.out.println(circle);
         }

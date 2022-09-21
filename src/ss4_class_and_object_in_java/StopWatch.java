@@ -40,7 +40,7 @@ public class StopWatch {
             System.out.print(array[m] + "\t");
         }
         stopWatch.endTime();
-        System.out.println("\n" + stopWatch.getElapsedTime());
+        System.out.println("\n Total runtime: " + stopWatch.getElapsedTime() + " s");
     }
 }
-// chạy không thành công
+// chạy đã thành công

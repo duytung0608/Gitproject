@@ -1,17 +1,19 @@
-package ss6_inheritance;
+package ss7_abstract_class_and_interface.practice07.circle_comparable_and_comparator;
 
 import ss7_abstract_class_and_interface.exercise07.resizeable_and_colorable.Circle;
 
 public class ComparableCircle extends Circle
-        implements Comparable<ComparableCircle>  { //Comparable sắp xếp nhưng sắp xếp như thế nào hay theo 1 cái phương thức như nào thì ta truyền vào cho nó <ComparableCircle> tức là sắp xếp theo ComparableCircle
+        implements Comparable<ComparableCircle>{
+
     public ComparableCircle() {
     }
 
     public ComparableCircle(double radius) {
         super(radius);
     }
+
     public ComparableCircle(String color, boolean filled, double radius) {
-        super(color, filled, radius);
+        super(color,filled,radius);
     }
 
     public int compareTo(ComparableCircle o) {
