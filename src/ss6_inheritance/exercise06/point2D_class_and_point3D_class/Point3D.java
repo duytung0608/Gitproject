@@ -1,4 +1,4 @@
-package ss6_inheritance.point2D_class_and_point3D_class;
+package ss6_inheritance.exercise06.point2D_class_and_point3D_class;
 
 import java.util.Arrays;
 
@@ -30,6 +30,6 @@ public class Point3D extends Point2D{
     }
     public String toString() {
         return "A point2D with coordinates = "
-                + Arrays.toString(this.getXYZ());
+                + Arrays.toString(this.getXYZ()); // hiển thị ra dưới dạng là [X, Y, Z]
     }
 }

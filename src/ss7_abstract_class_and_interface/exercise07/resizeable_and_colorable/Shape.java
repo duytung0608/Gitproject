@@ -1,7 +1,7 @@
 package ss7_abstract_class_and_interface.exercise07.resizeable_and_colorable;
 
 public class Shape {
-    String color;
+    private String color;
     boolean filled;
 
     public Shape() {

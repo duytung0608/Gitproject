@@ -1,4 +1,4 @@
-package ss6_inheritance.point_class_and_oveable_point;
+package ss6_inheritance.exercise06.point_class_and_moveable_point;
 
 import java.util.Arrays;
 
