@@ -70,7 +70,6 @@ public class MyList<E>{
                     return i;
             }
         }
-
         return -1;
     }
 
@@ -87,6 +86,12 @@ public class MyList<E>{
             throw new IndexOutOfBoundsException("size: " + size + "index: " + index);
         }
         return (E) elements[index];
+    }
+
+    public void clear() {
+        for (int i=0; i<size; i++) {
+            elements[i] = null;
+        }
     }
 
 //    public static void main(String[] args) {
