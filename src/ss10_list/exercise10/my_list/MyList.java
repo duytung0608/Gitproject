@@ -1,12 +1,11 @@
-package ss10_list.exercise10.MyList;
+package ss10_list.exercise10.my_list;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class MyList<E>{
     private int size = 0;
-    private static final int DEFAULT_CAPASITY = 10;
-    private Object[] elements;
+    private static final int DEFAULT_CAPASITY = 4;
+    public Object[] elements;
 
     public MyList() {
         elements = new Object[DEFAULT_CAPASITY];
@@ -24,7 +23,7 @@ public class MyList<E>{
     public void add(int index, E element) {
         if (elements.length == size)
             ensucapa();
-        for (int i=size; i>=index;i--) {
+        for (int i=size-1; i>=index;i--) {
             elements[i++] = elements[i];
         }
         elements[index] = element;
@@ -77,7 +76,8 @@ public class MyList<E>{
         if(size == elements.length){
             return false;
         }
-        add(size+1,o);
+        elements[size] = o;
+        size++;
         return true;
     }
 
@@ -93,6 +93,7 @@ public class MyList<E>{
             elements[i] = null;
         }
     }
+
 
 //    public static void main(String[] args) {
 //        MyList list = new MyList();
