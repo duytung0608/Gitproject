@@ -1,17 +1,27 @@
-package ss11_stack_and_queue.queue_practice;
+package ss11_stack_and_queue.practice11.queue_use_linkedlist;
 
 public class MyLinkedListQueue {
-    private Node head;
-    private Node tail;
+    public Node head;
+    public Node tail;
 
     public MyLinkedListQueue() {
         this.head = null;
         this.tail = null;
     }
 
+    class Node {
+        public int key;
+        public Node next;
+
+        public Node(int key) {
+            this.key = key;
+            this.next = null;
+        }
+    }
+
     public void enqueue(int key) {
         Node temp = new Node(key);
-        if (this.head == null) {
+        if (this.tail == null) {
             this.head = this.tail = temp;
             return;
         }
@@ -20,14 +30,13 @@ public class MyLinkedListQueue {
     }
 
     public Node dequeue() {
-        if (this.head == null) {
+        if (this.head == null)
             return null;
-        }
         Node temp = this.head;
         this.head = this.head.next;
-        if (this.head == null) {
+        if (this.head == null)
             this.tail = null;
-        }
         return temp;
     }
+
 }

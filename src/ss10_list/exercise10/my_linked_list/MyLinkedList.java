@@ -41,8 +41,8 @@ public class MyLinkedList<E> {
     }
 
     public void addFirst(E e) {
-        if (head == null) {
-            head = new Node(e);
+        if (head.next == null) {
+            head.next = head = new Node(e);
         } else {
             Node temp = head.next;
             head = new Node(e);
@@ -52,8 +52,8 @@ public class MyLinkedList<E> {
     }
 
     public void addLast(E e) {
-        if (head == null) {
-            head = new Node(e);
+        if (head.next == null) {
+            head.next = new Node(e);
         } else {
             Node temp = head;
             for (int i=0; temp != null; i++) {
@@ -121,6 +121,7 @@ public class MyLinkedList<E> {
     }
 
     public void clear() {
-        
+        head.next = null;
+        head = null;
     }
 }

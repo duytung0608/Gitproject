@@ -1,10 +1,9 @@
-package ss11_stack_and_queue.stack_practice;
+package ss11_stack_and_queue.practice11.stack_use_linkedlist;
 
-import java.util.EmptyStackException;
 import java.util.LinkedList;
 
 public class MyGenericStack<T> {
-    LinkedList<T> stack;
+    private LinkedList<T> stack;
 
     public MyGenericStack() {
         stack = new LinkedList();
@@ -15,8 +14,8 @@ public class MyGenericStack<T> {
     }
 
     public T pop() {
-        if (isEmty()) {
-            throw new EmptyStackException();
+        if (stack.isEmpty()) {
+            throw new IndexOutOfBoundsException();
         }
         return stack.removeFirst();
     }
@@ -31,5 +30,4 @@ public class MyGenericStack<T> {
         }
         return false;
     }
-
 }

@@ -1,4 +1,4 @@
-package ss11_stack_and_queue.queue_practice;
+package ss11_stack_and_queue.practice11.queue_use_linkedlist;
 
 public class LinkedListQueueClient {
     public static void main(String[] args) {
