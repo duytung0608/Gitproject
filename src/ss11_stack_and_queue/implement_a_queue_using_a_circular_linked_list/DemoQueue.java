@@ -6,7 +6,7 @@ public class DemoQueue {
         queue.enQueue("Da Nang");
         queue.enQueue("Ha Noi");
         queue.enQueue("Hue");
-        queue.deQueue();
+//        queue.deQueue();
         System.out.println("Element of stack: ");
         queue.displayQueue();
 

@@ -46,10 +46,16 @@ public class CircularQueue<T> {
     }
 
     public void displayQueue() {
-        Node temp = head.next;
-        for (int i=0; temp!=null;i++) {
-            System.out.print(temp.key + "\t");
-            temp = temp.next;
+        while (head != null) {
+            Node temp = head;
+            if (head == tail) {
+                head = tail = null;
+                System.out.print(temp.key + "\t");
+            } else {
+                head = head.next;
+                tail.next = head;
+                System.out.print(temp.key + "\t");
+            }
         }
     }
 
@@ -62,6 +68,7 @@ public class CircularQueue<T> {
         queue.enqueue(5);
         queue.enqueue(6);
         queue.enqueue(7);
+        queue.dequeue();
 //        queue.displayQueue();
         while (queue.head != null) {
             System.out.println(queue.dequeue() + "\t");
