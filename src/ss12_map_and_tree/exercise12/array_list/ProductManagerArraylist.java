@@ -1,14 +1,13 @@
-package ss12_map_and_tree.exercise12;
+package ss12_map_and_tree.exercise12.array_list;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+import ss12_map_and_tree.exercise12.Product;
 
-import java.awt.*;
 import java.util.*;
 
-public class ProductManager {
+public class ProductManagerArraylist {
     private ArrayList<Product> productList;
 
-    public ProductManager() {
+    public ProductManagerArraylist() {
         productList = new ArrayList<>();
     }
 
