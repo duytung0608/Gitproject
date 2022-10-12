@@ -2,13 +2,13 @@ package ss12_map_and_tree.exercise12;
 
 public class Product {
     private String name;
-    private int identification;
+    private String identification;
     private double price;
 
     public Product() {
     }
 
-    public Product(String name, int identification, double price) {
+    public Product(String name, String identification, double price) {
         this.name = name;
         this.identification = identification;
         this.price = price;
@@ -22,11 +22,11 @@ public class Product {
         this.name = name;
     }
 
-    public int getIdentification() {
+    public String getIdentification() {
         return this.identification;
     }
 
-    public void setIdentification(int identification) {
+    public void setIdentification(String identification) {
         this.identification = identification;
     }
 
@@ -36,6 +36,15 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String toString() {
+        return "Product's name = "
+                + this.name
+                + " and id = "
+                + this.identification
+                + " and price = "
+                + this.price;
     }
 
 
