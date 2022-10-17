@@ -1,8 +1,10 @@
 package ss10_list.exercise10.my_list;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
-public class MyList<E>{
+public class MyList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPASITY = 4;
     public Object[] elements;
