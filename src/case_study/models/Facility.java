@@ -1,6 +1,6 @@
-package case_study.room;
+package case_study.models;
 
-public class Furama {
+public abstract class Facility {
     private String serviceName;
     private String usableArea;
     private double rentalCosts;

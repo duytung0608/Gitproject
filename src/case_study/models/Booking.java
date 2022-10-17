@@ -1,6 +1,6 @@
-package case_study.people;
+package case_study.models;
 
-public class BookingBill {
+public class Booking {
     private String bookingCode;
     private String startDay;
     private String endDay;

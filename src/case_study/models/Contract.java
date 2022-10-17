@@ -1,6 +1,6 @@
-package case_study.people;
+package case_study.models;
 
-public class RentalContract {
+public class Contract {
     private String contractCode;
     private String bookingCode;
     private double advanceDepositAmount;

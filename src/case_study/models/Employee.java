@@ -1,6 +1,6 @@
-package case_study.people;
+package case_study.models;
 
-public class Employee extends People{
+public class Employee extends Person {
     private int employeeCode;
     private String emailAddress;
     private String level;

@@ -1,16 +1,16 @@
-package case_study.people;
+package case_study.models;
 
-public abstract class People {
+public abstract class Person {
     private String name;
     private String dateOfBirth;
     private String sex;
     private int identityCardNumber;
     private int phoneNumber;
 
-    public People() {
+    public Person() {
     }
 
-    public People(String name, String dateOfBirth, String sex, int identityCardNumber, int phoneNumber) {
+    public Person(String name, String dateOfBirth, String sex, int identityCardNumber, int phoneNumber) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.sex = sex;

@@ -1,6 +1,6 @@
-package case_study.people;
+package case_study.models;
 
-public class Customer extends People{
+public class Customer extends Person {
     private String customerCode;
     private String emailAddress;
     private String customerType; //Loại Customer bao gồm: (Diamond, Platinium, Gold, Silver, Member).
