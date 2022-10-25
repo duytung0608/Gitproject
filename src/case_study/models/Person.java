@@ -58,4 +58,16 @@ public abstract class Person {
         this.phoneNumber = phoneNumber;
     }
     // nhớ thêm phương thức abstract;;;
+
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", sex='" + sex + '\'' +
+                ", identityCardNumber=" + identityCardNumber +
+                ", phoneNumber=" + phoneNumber +
+                '}';
+    }
 }

@@ -6,6 +6,7 @@ public class Customer extends Person {
     private String customerType; //Loại Customer bao gồm: (Diamond, Platinium, Gold, Silver, Member).
     private String address;
 
+
     public Customer() {
     }
 
@@ -47,5 +48,16 @@ public class Customer extends Person {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer is a subclass of " +
+                super.toString() +
+                "customerCode='" + customerCode + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", customerType='" + customerType + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
