@@ -32,7 +32,7 @@ public class FacilityServiceImpl {
                 } else
                     facilityMap.put("House", facilityMap.get("House") + 1);
         } else {
-            String house = "House";
+            String house = "Room";
             if (!facilityMap.containsKey(house)) {
                 facilityMap.put(house, 1);
             } else
@@ -41,7 +41,12 @@ public class FacilityServiceImpl {
     }
 
     public void facilityMaintenance() {
-
+        Set<Map.Entry<String, Integer>> facMaintenList = facilityMap.entrySet();
+        for (Map.Entry<String, Integer> fac : facMaintenList) {
+            if (fac.getValue() == 2) {
+                System.out.println("Key: " + fac.getKey() + " | Value: "+ fac.getValue());
+            }
+        }
     }
 
 

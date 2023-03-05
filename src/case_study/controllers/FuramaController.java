@@ -86,7 +86,7 @@ public class FuramaController {
                     int choice3 = input.nextInt();
                     switch (choice3) {
                         case 1: {
-
+                                facilityService.displayFacility();
                             break;
                         }
                         case 2: {
@@ -95,21 +95,15 @@ public class FuramaController {
                             System.out.println("3. Add new Room");
                             System.out.println("4. Back to mennu");
                             int temp = input.nextInt();
-                            switch (temp) {
-                                case 1: {
-
-
-                                    break;
-                                }
-                                case 2: {
-
-                                    break;
-                                }
+                            if (temp != 4) {
+                                facilityService.adđFacility(temp);
+                            } else {
+                                System.out.println("Error");
                             }
                             break;
                         }
                         case 3: {
-
+                            facilityService.facilityMaintenance();
                             break;
                         }
                         default: {
